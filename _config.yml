@@ -1,0 +1,4 @@
+name: Mitja Kleider
+pygments: true
+permalink: /:year/:month/:day/:title/
+timezone: Europe/Berlin
