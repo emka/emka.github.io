@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Building an Arduino project without using the Arduino IDE"
+date:   2013-07-02 10:11:18
 categories: arduino
 ---
 The Arduino IDE brings plug and play to microcontroller programming. Open a sketch, select your board in the board menu, and click play to compile and upload.
@@ -24,10 +25,12 @@ Newer versions are creating a Makefile [during the build process](http://www.ard
 People started building their own Makefiles, e.g. [Makefile for the DOGS102 Shield](https://code.google.com/p/dogm128/source/browse/libraries/Dogm/examples/SpaceTrash/Makefile.uno_dogs102)
 
 ## Scons
-Scons with [arscons](https://github.com/suapapa/arscons)
+If you prefer a Python build tool, there is Scons support with [arscons](https://github.com/suapapa/arscons).
 
 ## CMake
-CMake with [arduino-cmake](https://github.com/queezythegreat/arduino-cmake)
+There is also CMake support with [arduino-cmake](https://github.com/queezythegreat/arduino-cmake).
 
 ## Ino tool
-[Ino](http://inotool.org/) is a CLI tool for working with Arduino. [Quickstart](http://inotool.org/quickstart)
+[Ino](http://inotool.org/) is a CLI tool for working with Arduino. Their [quickstart](http://inotool.org/quickstart) should get you up and running.
+
+This tool worked best for us when we needed a quick solution.
