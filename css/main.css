@@ -163,3 +163,25 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #333;
 }
+
+blockquote {
+  margin-left: 1.5em;
+  padding-left: 1em;
+  border-left: 3px solid #ccc;
+  display: block;
+} 
+
+blockquote:before {
+  margin-left: -1em;
+  color: #ccc;
+  font-size: 3em;
+  content: open-quote;
+  float: left;
+}
+
+blockquote:after {
+  color: #ccc;
+  font-size: 3em;
+  content: close-quote;
+  float: right;
+}
