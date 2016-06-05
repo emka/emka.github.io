@@ -1,13 +1,39 @@
----
-layout: default
-title: mitja.kleider.name
----
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./static/style.css">
+<title>Welcome! — mitja.kleider.name</title>
+<body>
+  <header>
+    <h1>Random notes</h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        
+          <li><a href="./blog/">Blog</a></li>
+        
+          <li><a href="./projects/">Projects</a></li>
+        
+          <li><a href="./about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+    
+  <h2>Welcome!</h2>
+  <p>You will find some short tutorials and random notes in the <a href="./blog/">blog</a>.</p>
+<h2>Basic tools</h2>
+<p>There are a few basic tools I would recommend:</p>
+<ul>
+<li>Version Control (<a href="./blog/git/">git</a>)</li>
+<li>Editor (<a href="./blog/spacemacs/">Spacemacs</a>)</li>
+<li>Configuration management (<a href="./blog/ansible/">Ansible</a>)</li>
+<li>Remote shell with <a href="https://tmux.github.io/"><code>tmux</code></a> and <a href="https://mosh.mit.edu/"><code>mosh</code></a></li>
+<li>Website (<a href="./blog/hello-lektor/">Lektor</a>)</li>
+<li><a href="http://plaintextaccounting.org/">Plain Text Accounting</a> using <a href="http://furius.ca/beancount/">beancount</a></li>
+</ul>
 
-<div id="home">
-  <h1>Articles</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+
+  </div>
+  <footer>
+  </footer>
+</body>

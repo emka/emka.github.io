@@ -1,5 +1,0 @@
-name: Mitja Kleider
-highlighter: pygments
-permalink: /:year/:month/:day/:title/
-timezone: Europe/Berlin
-markdown: kramdown

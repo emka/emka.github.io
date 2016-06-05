@@ -1,0 +1,64 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../static/style.css">
+<title>Building an Arduino project without using the Arduino IDE — mitja.kleider.name</title>
+<body>
+  <header>
+    <h1><a href="../../">Random notes</a></h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        
+          <li class="active"><a href="../../blog/">Blog</a></li>
+        
+          <li><a href="../../projects/">Projects</a></li>
+        
+          <li><a href="../../about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+    
+  
+  <div class="blog-post">
+  
+    <h2>Building an Arduino project without using the Arduino IDE</h2>
+  
+  <p class="meta">
+    written by
+    
+      Mitja Kleider
+    
+    on 2013-07-02
+  </p>
+  <p>The Arduino IDE brings plug and play to microcontroller programming. Open a sketch, select your board in the board menu, and click play to compile and upload.</p>
+<p>Sometimes you might want to know what is going on during the <a href="http://arduino.cc/en/Hacking/BuildProcess">build process</a>.
+Edit the Arduino <a href="http://arduino.cc/en/Hacking/Preferences">preferences file</a> and set
+<code>build.verbose</code> and <code>upload.verbose</code> to <code>true</code>.</p>
+<p>If you would like to use the Arduino bootloader and library with your own editor, things get a bit more complicated.
+There are several build options for Arduino projects:</p>
+<ul>
+<li>Makefile</li>
+<li>Scons</li>
+<li>CMake</li>
+<li><em>Ino</em> CLI tool (recommended)</li>
+</ul>
+<h3>Makefile</h3>
+<p>Older versions of Arduino came with a Makefile, located at <code>hardware/cores/arduino/Makefile</code>. You may need to reset the Arduino manually, like in this <a href="http://johanneshoff.com/arduino-command-line.html">troubleshooting guide</a>.</p>
+<p>Newer versions are creating a Makefile <a href="http://www.arduino.cc/en/Main/Documentation">during the build process</a>.
+People started building their own Makefiles, e.g. <a href="https://code.google.com/p/dogm128/source/browse/libraries/Dogm/examples/SpaceTrash/Makefile.uno_dogs102">Makefile for the DOGS102 Shield</a></p>
+<h3>Scons</h3>
+<p>If you prefer a Python build tool, there is Scons support with <a href="https://github.com/suapapa/arscons">arscons</a>.</p>
+<h3>CMake</h3>
+<p>There is also CMake support with <a href="https://github.com/queezythegreat/arduino-cmake">arduino-cmake</a>.</p>
+<h3>Ino tool</h3>
+<p><a href="http://inotool.org/">Ino</a> is a CLI tool for working with Arduino. Their <a href="http://inotool.org/quickstart">quickstart</a> should get you up and running.</p>
+<p>This tool worked best for us when we needed a quick solution.</p>
+
+  </div>
+
+
+  </div>
+  <footer>
+  </footer>
+</body>
